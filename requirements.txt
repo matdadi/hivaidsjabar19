@@ -5,4 +5,3 @@ pandas
 seaborn
 streamlit_lottie
 requests
-json
