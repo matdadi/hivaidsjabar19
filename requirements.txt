@@ -2,7 +2,6 @@ matplotlib
 streamlit
 numpy
 pandas
-urllib
 seaborn
 PIL
 streamlit_lottie
