@@ -1,1 +1,11 @@
-
+matplotlib
+streamlit
+numpy
+pandas
+xmltodict
+urllib
+seaborn
+PIL
+streamlit_lottie
+requests
+json
