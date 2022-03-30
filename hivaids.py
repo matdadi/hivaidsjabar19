@@ -1,5 +1,3 @@
-from math import degrees
-from cv2 import normalize
 from matplotlib.backends.backend_agg import RendererAgg
 import streamlit as st
 import numpy as np
