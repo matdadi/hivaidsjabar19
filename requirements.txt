@@ -3,7 +3,6 @@ streamlit
 numpy
 pandas
 seaborn
-PIL
 streamlit_lottie
 requests
 json
