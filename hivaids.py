@@ -143,7 +143,7 @@ with row4_1, _lock:
         ax = fig.subplots()
         sns.set(style='white')
         sns.barplot(x=gender2['nama_kabupaten_kota'],
-                    y=gender2['total'], hue=gender2['kelompok_umur'], ax=ax)
+                    y=gender2['total'], hue=gender2['jenis_kelamin'], ax=ax)
         ax.set_xlabel('Kabupaten/Kota')
         ax.set_ylabel('Jumlah')
         plt.xticks(rotation=90)
