@@ -76,9 +76,10 @@ has_age = any(age)
 
 # aids gender
 gender2 = df2.copy(deep=True)
-gender2 = gender2.drop(['id', 'kode_provinsi', 'nama_provinsi', 'kode_kabupaten_kota', 'tahun', 'satuan'], axis=1)
+gender2['kode_kabupaten_kota'] = gender2['kode_kabupaten_kota'].astype('str').astype(int)
+gender2 = gender2.drop(['id', 'kode_provinsi', 'nama_provinsi', 'tahun', 'satuan'], axis=1)
 gender2['total'] = gender2.groupby(['nama_kabupaten_kota', 'jenis_kelamin'], as_index=False)['jumlah_kasus'].transform('sum')
-gender2 = gender2.groupby(['nama_kabupaten_kota'], as_index=False).head(2).reset_index(drop=True)
+gender2 = gender2.groupby(['nama_kabupaten_kota', 'jenis_kelamin'], as_index=False).head(1).reset_index(drop=True).sort_values(by=['kode_kabupaten_kota','jenis_kelamin'])
 has_gender2 = any(gender2)
 
 # aids age
