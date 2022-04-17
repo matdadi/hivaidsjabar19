@@ -5,3 +5,6 @@ pandas
 seaborn
 streamlit_lottie
 requests
+geopandas
+altair
+plotly
