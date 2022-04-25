@@ -9,4 +9,3 @@ geopandas
 altair
 plotly
 streamlit_option_menu
-functools
