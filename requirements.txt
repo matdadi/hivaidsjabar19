@@ -10,4 +10,3 @@ altair
 plotly
 streamlit_option_menu
 functools
-base64
